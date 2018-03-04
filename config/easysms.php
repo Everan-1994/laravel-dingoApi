@@ -1,4 +1,5 @@
 <?php
+
 return [
     // HTTP 请求的超时时间（秒）
     'timeout'  => 5.0,
@@ -18,10 +19,10 @@ return [
         'errorlog' => [
             'file' => '/tmp/easy-sms.log',
         ],
-        'alidayu'  => [
-            'app_key'    => env('APP_KEY'),
-            'app_secret' => env('APP_SECRET'),
-            'sign_name'  => env('SIGN_NAME'),
+        'aliyun'   => [
+            'access_key_id'     => env('ACCESS_KEY_ID'),
+            'access_key_secret' => env('ACCESS_KEY_SECRET'),
+            'sign_name'         => '乐之都',
         ],
     ],
 ];
