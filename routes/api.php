@@ -4,7 +4,7 @@ $api = app('Dingo\Api\Routing\Router');
 
 $api->version('v1', [
     'namespace'  => 'App\Http\Controllers\Api',
-    'middleware' => 'serializer:array'
+    'middleware' => ['serializer:array', 'bindings']
 ], function ($api) {
 
     $api->group([
