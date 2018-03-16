@@ -75,17 +75,15 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                <form action="/image" method="post" enctype="multipart/form-data">
+                    {{ csrf_field() }}
+                    <div class="form-group">
+                        <input type="file" name="image" value="选择图片">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="form-control" value="上传">
+                    </div>
+                </form>
             </div>
         </div>
     </body>

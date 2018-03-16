@@ -161,6 +161,8 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         App\Providers\EasySmsServiceProvider::class,
+
+        JellyBool\Flysystem\Upyun\UpyunServiceProvider::class,
     ],
 
     /*
